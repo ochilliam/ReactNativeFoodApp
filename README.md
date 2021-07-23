@@ -1,3 +1,0 @@
-# ReactNativeFoodApp
-# ReactNativeFoodApp
-# ReactNativeFoodApp
