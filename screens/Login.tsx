@@ -35,8 +35,8 @@ const Login = ({ navigation }) => {
     );
   };
 
-  const onPressLogin = () => navigation.replace("Home");
-  const onPressSignup = () => navigation.replace("Home");
+  const onPressLogin = () => navigation.replace("Root");
+  const onPressSignup = () => navigation.replace("Root");
 
   const renderDetail = () => (
     <View style={styles.detailContainer}>

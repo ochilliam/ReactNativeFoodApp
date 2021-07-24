@@ -9,8 +9,9 @@ import { ColorSchemeName } from "react-native";
 import { Login, Recipe } from "../screens";
 
 import NotFoundScreen from "../screens/NotFoundScreen";
+import Profile from "../screens/Profile";
 import { RootStackParamList } from "../types";
-import BottomTabNavigator from "./BottomTabNavigator";
+// import BottomTabNavigator from "./BottomTabNavigator";
 import LinkingConfiguration from "./LinkingConfiguration";
 import Tabs from "./tabs";
 
@@ -37,8 +38,9 @@ function RootNavigator() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Home" component={Tabs} />
+      <Stack.Screen name="Root" component={Tabs} />
       <Stack.Screen name="Recipe" component={Recipe} />
+      <Stack.Screen name="Profile" component={Profile} />
       {/* <Stack.Screen name="Root" component={BottomTabNavigator} /> */}
       <Stack.Screen
         name="NotFound"
