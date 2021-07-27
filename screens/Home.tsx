@@ -7,8 +7,8 @@ import {
   Image,
   SafeAreaView,
   TextInput,
+  StatusBar as RNStatusBar,
   FlatList,
-  StatusBar,
 } from "react-native";
 import { CategoryCard } from "../components/CategoryCard";
 import { TrendCard } from "../components/TrendCard";
@@ -76,7 +76,7 @@ const Home = ({ navigation }) => {
               containerStyle={{
                 marginLeft: index == 0 ? SIZES.padding : 0,
               }}
-              onPress={() => navigation.navigate("Recipe", { item })}
+              onPress={() => navigation.navigate("Recipe", { recipe: item })}
               item={item}
             />
           )}
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.white,
-    marginTop: StatusBar.currentHeight,
+    marginTop: RNStatusBar.currentHeight,
   },
   headerContainer: {
     flexDirection: "row",
